@@ -32,7 +32,7 @@
         "color": "rgb(212, 70, 56)"
       }
     ],
-    "yiyan": ""
+    "__yiyan": ""
   },
   "color": {
     "accent": [
@@ -85,7 +85,7 @@
     "perPage": 10
   },
   "footer": {
-    "startTime": "2025-10-22T00:00:00Z"
+    "startTime": "2025-10-21T22:00:00+09:00"
   },
   "waline": {
     "serverURL": "https://waline.lxchapu.com"

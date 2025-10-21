@@ -1,6 +1,6 @@
 ---
 title: Critical Rendering Path(CRP)
-date: 2025-10-21
+date: 2025-10-21T23:20:16+09:00
 summary: Critical Rendering Path에 대해 알아보자.
 category: Web
 tags: [브라우저 렌더링]
@@ -91,6 +91,6 @@ p span {
 감사합니다.☺️
 
 > 참조
-> [CSSOM(CSS Object Model)- 빈츠 블로그](https://onlydev.tistory.com/8)
-> [렌더링 트리 생성, 레이아웃 페인트 - 구글 개발자 블로그](https://web.dev/articles/critical-rendering-path/render-tree-construction?hl=ko)
+> [CSSOM(CSS Object Model)- 빈츠 블로그](https://onlydev.tistory.com/8)  
+> [렌더링 트리 생성, 레이아웃 페인트 - 구글 개발자 블로그](https://web.dev/articles/critical-rendering-path/render-tree-construction?hl=ko)  
 > [DOM 트리 - javascript.info](https://ko.javascript.info/dom-nodes)
