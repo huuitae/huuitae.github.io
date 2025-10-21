@@ -4,20 +4,45 @@
 @import './signature.css';
 @import './swup.css';
 
-@font-face {
+/* @font-face {
   font-family: 'Atkinson';
   src: url('/fonts/atkinson-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* @font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Pretendard';
+  src:
+    url('/fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('/fonts/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson-bold.woff') format('woff');
+  font-family: 'Pretendard';
+  src:
+    url('/fonts/Pretendard-Bold.woff2') format('woff2'),
+    url('/fonts/Pretendard-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+body,
+html {
+  font-family: 'Pretendard', system-ui, sans-serif; /* 👈 'Pretendard' 폰트를 기본으로 적용 */
 }
 
 ::selection {

@@ -21,10 +21,7 @@ export function Outdate({ lastMod }: { lastMod: Date }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <span>
-            这篇文章最后修改于 {getFormattedDate(lastMod)}
-            ，部分内容可能已经不适用，如有疑问可联系作者。
-          </span>
+          <span>이 글은 {getFormattedDate(lastMod)}에 마지막으로 수정되었습니다.</span>
         </motion.div>
       )}
     </AnimatePresence>

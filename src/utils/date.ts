@@ -6,30 +6,30 @@ export function getRelativeTime(startDate: Date, endDate = new Date()) {
   }
   const diffMinutes = Math.floor(diffSeconds / 60)
   if (diffMinutes < 10) {
-    return '刚刚'
+    return '방금'
   }
   if (diffMinutes < 60) {
-    return `${diffMinutes} 分钟前`
+    return `${diffMinutes} 몇 분 전`
   }
   const diffHours = Math.floor(diffMinutes / 60)
   if (diffHours < 24) {
-    return `${diffHours} 小时前`
+    return `${diffHours} 몇 시간 전`
   }
   const diffDays = Math.floor(diffHours / 24)
   if (diffDays < 10) {
-    return `${diffDays} 天前`
+    return `${diffDays} 며칠 전`
   }
   return null
 }
 
 // 获取一个格式化的日期，格式为：2024 年 1 月 1 日 星期一
 export function getFormattedDate(date: Date) {
-  const year = date.getFullYear() % 100
+  const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
-  const week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][date.getDay()]
+  const week = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'][date.getDay()]
 
-  return `${year} 年 ${month} 月 ${day} 日 ${week}`
+  return `${year}년 ${month}월 ${day}일 ${week}`
 }
 
 // 数字前补 0
@@ -45,7 +45,7 @@ export function getFormattedDateTime(date: Date) {
   const hours = padZero(date.getHours())
   const minutes = padZero(date.getMinutes())
 
-  return `${year} 年 ${month} 月 ${day} 日 ${hours}:${minutes}`
+  return `${year}년 ${month}월 ${day}일 ${hours}:${minutes}`
 }
 
 // 获取两个日期的相差的天数

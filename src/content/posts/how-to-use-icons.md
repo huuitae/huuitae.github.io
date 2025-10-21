@@ -7,7 +7,7 @@ comments: true
 draft: false
 ---
 
-Gyoza 选择 font-class 的方式引用图标。这些图标大部分来源于 [Remix Icons](https://remixicon.com/)，并且在 [iconfont](https://www.iconfont.cn/) 上进行管理和导出。
+Gyoza는 아이콘을 참조하기 위해 글꼴 클래스를 선택합니다. 이러한 아이콘의 대부분은 다음에서 제공됩니다.[Remix Icons](https://remixicon.com/)，并且在 [iconfont](https://www.iconfont.cn/) 上进行管理和导出。
 
 下图展示了项目中的所有图标：
 

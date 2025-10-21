@@ -31,13 +31,15 @@ export function TimelineProgress() {
   return (
     <>
       <p className="mt-4">
-        今天是 {currentYear} 年的第 <CountUp to={dayOfYear} decimals={0} /> 天
+        오늘은 {currentYear}년의 <CountUp to={dayOfYear} decimals={0} />
+        일째 입니다.
       </p>
       <p className="mt-4">
-        今年已过 <CountUp to={percentOfYear} decimals={5} />%
+        올해의 <CountUp to={percentOfYear} decimals={1} />
+        %가 지나갔습니다.
       </p>
       <p className="mt-4">
-        今天已过 <CountUp to={percentOfToday} decimals={5} />%
+        오늘의 <CountUp to={percentOfToday} decimals={1} />% 지나갔습니다.
       </p>
     </>
   )

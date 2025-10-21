@@ -2,7 +2,7 @@ import { author, site } from '@/config.json'
 import { getFormattedDateTime } from '@/utils/date'
 import { AnimatedSignature } from '../AnimatedSignature'
 import { useEffect, useState } from 'react'
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify'
 
 function getPostUrl(slug: string) {
   return new URL(slug, site.url).href
@@ -22,7 +22,7 @@ export function PostCopyright({
 
   function handleCopyUrl() {
     navigator.clipboard.writeText(url)
-    toast.success('已复制文章链接')
+    toast.success('게시글 링크가 복사되었습니다.')
   }
 
   useEffect(() => {
@@ -31,24 +31,26 @@ export function PostCopyright({
 
   return (
     <section className="text-xs leading-loose text-secondary">
-      <p>文章标题：{title}</p>
-      <p>文章作者：{author.name}</p>
+      <p>게시글 제목：{title}</p>
+      <p>작성자：{author.name}</p>
       <p>
-        <span>文章链接：{url}</span>
+        <span>게시글 링크：{url}</span>
         <span role="button" className="cursor-pointer select-none" onClick={handleCopyUrl}>
-          [复制]
+          &nbsp;[복사]
         </span>
       </p>
-      <p>最后修改时间：{lastModStr}</p>
+      <p>마지막 수정일：{lastModStr}</p>
       <hr className="my-3 border-primary" />
       <div>
         <div className="float-right ml-4 my-2">
           <AnimatedSignature />
         </div>
         <p>
-          商业转载请联系站长获得授权，非商业转载请注明本文出处及文章链接，您可以自由地在任何媒体以任何形式复制和分发作品，也可以修改和创作，但是分发衍生作品时必须采用相同的许可协议。
-          <br />
-          本文采用
+          상업적 복제의 경우, 웹마스터에게 허가를 요청하십시오. 비상업적 복제의 경우, 본 기사의
+          출처와 링크를 명시해 주십시오. 본 저작물은 어떤 형태로든, 어떤 매체로든 자유롭게 복제 및
+          배포할 수 있으며, 수정 및 제작도 가능합니다. 단, 2차 저작물을 배포할 경우에도 동일한
+          라이선스 계약을 적용해야 합니다.
+          <br />이 게시글은 다음을 채택합니다.
           <a
             className="hover:underline hover:text-accent underline-offset-2"
             href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
@@ -57,7 +59,7 @@ export function PostCopyright({
           >
             CC BY-NC-SA 4.0
           </a>
-          进行许可。
+          의 허가를 받아야 합니다.
         </p>
       </div>
     </section>

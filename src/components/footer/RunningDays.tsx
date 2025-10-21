@@ -11,8 +11,8 @@ export function RunningDays() {
   }, [])
 
   if (days < 0) {
-    return <span>Ops! 网站还没有发布</span>
+    return <span>Ops! 아직 웹 사이트가 공개되지 않았습니다</span>
   }
 
-  return <span>已经运行了 {days} 天</span>
+  return <span>{days}일</span>
 }

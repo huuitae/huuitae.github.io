@@ -20,7 +20,7 @@ import swup from '@swup/astro'
 
 // https://astro.build/config
 export default defineConfig({
-  site: site.url,
+  site: 'https://huuitae.github.io',
   integrations: [
     tailwind(),
     react(),
@@ -46,7 +46,7 @@ export default defineConfig({
       rehypeCodeHighlight,
       rehypeTableBlock,
     ],
-    remarkRehype: { footnoteLabel: '参考', footnoteBackLabel: '返回正文' },
+    remarkRehype: { footnoteLabel: '참고', footnoteBackLabel: '컨텐츠로 돌아가기' },
   },
   vite: {
     build: {

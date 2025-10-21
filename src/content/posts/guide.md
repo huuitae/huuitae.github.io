@@ -52,29 +52,29 @@ pnpm preview
 
 ### 配置项
 
-本项目中的绝大部分配置都定义在 `src/config.json` 文件中。
+이 프로젝트의 구성 대부분은 `src/config.json` 파일에 정의되어 있습니다.
 
-你应该首先将 `site.url` 修改成自己的域名，避免导航错误。
+탐색 오류를 방지하려면 먼저 `site.url`을 자신의 도메인으로 변경해야 합니다.
 
-以下是配置项的说明：
+다음은 구성 항목에 대한 설명입니다.
 
 ```json
 {
   "site": {
-    "url": "", // 网站地址
-    "title": "", // 网站标题
-    "description": "", // 通用的网站描述 SEO
-    "keywords": "", // 通用的网站关键词 SEO
-    "lang": "zh-CN", // 网站的语言
-    "favicon": "", // 浏览器图标，存放在 public 目录下
-    "appleTouchIcon": "" // 苹果设备图标，存放在 public 目录下
+    "url": "", // 웹사이트 주소
+    "title": "", // 웹사이트 제목
+    "description": "", // 일반 사이트 설명 SEO
+    "keywords": "", // 일반적인 웹사이트 키워드 SEO
+    "lang": "zh-CN", // 언어
+    "favicon": "", // 공개 디렉토리에 저장된 브라우저 아이콘
+    "appleTouchIcon": "" // 공개 디렉토리에 저장된 Apple 기기 아이콘
   },
   "author": {
-    "name": "", // 作者名称
-    "twitterId": "", // 推特账号 ID，以 @ 开头，用于 Open Graph
-    "avatar": "" // 作者头像地址
+    "name": "", // 저자 이름
+    "twitterId": "", // Open Graph의 경우 @로 시작하는 Twitter 계정 ID
+    "avatar": "" // 작성자 아바타 URL
   },
-  // 首页 Hero 组件
+  // 홈 히어로 컴포넌트
   "hero": {
     "name": "", // 显示的名称
     "bio": "", // 一句话介绍
