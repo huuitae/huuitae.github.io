@@ -1,6 +1,6 @@
 ---
 title: React Context로 다크모드 구현하기
-date: 2025-10-22T13:31:00+09:00
+date: 2025-10-22T16:22:00+09:00
 summary: 리액트 컨텍스트를 이용해서 테마 관리하기
 category: React
 tags: [React, React Context, theme, 다크모드, 코드잇, 기초프로젝트]
