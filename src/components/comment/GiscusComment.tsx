@@ -6,12 +6,14 @@ export default function GiscusComment() {
 
   useEffect(() => {
     const currentTheme = document.documentElement.getAttribute('data-theme')
+
     setTheme(currentTheme)
 
     const themeObserver = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.attributeName === 'data-theme') {
-          setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+          const newTheme = document.documentElement.getAttribute('data-theme')
+          setTheme(newTheme)
         }
       })
     })
