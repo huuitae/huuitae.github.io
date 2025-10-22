@@ -1,9 +1,9 @@
 ---
 title: React Virtual DOM
 date: 2025-10-22T13:31:00+09:00
-summary: JS Promise에 대해 알아보자.
-category: JS
-tags: [js, promise, 비동기, fetch, then]
+summary: React의 Virtual DOM에 대해 알아보자.
+category: React
+tags: [React, CRP, Virtual DOM, 가상돔, 면접 질문]
 ---
 
 ## 0️⃣ 브라우저의 렌더링 과정
