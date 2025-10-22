@@ -93,7 +93,7 @@ const Modal = ({ ref, className, onCancel, children }: ModalProps) => {
 };
 ```
 
-<img width="473" height="258" alt="Image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/124661622/504108708-213e9a0d-c7dc-44b8-a788-cd2b09bd37cf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251022T092905Z&X-Amz-Expires=300&X-Amz-Signature=44a9d0e3f073126f26f24a99045d14604275a9b58ff2cdbae076d9660f75b270&X-Amz-SignedHeaders=host" />
+<img width="473" height="258" alt="dialog_modal" src="/public/images/dialog_modal.png" />
 <br />
 
 > 참조  
