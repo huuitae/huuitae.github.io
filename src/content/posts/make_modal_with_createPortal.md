@@ -93,7 +93,7 @@ const Modal = ({ ref, className, onCancel, children }: ModalProps) => {
 };
 ```
 
-<img width="473" height="258" alt="dialog_modal" src="/public/images/dialog_modal.png" />
+<img width="473" height="258" alt="dialog_modal" src="/images/dialog_modal.png" />
 <br />
 
 > 참조  
