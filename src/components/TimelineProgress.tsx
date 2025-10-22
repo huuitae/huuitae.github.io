@@ -7,9 +7,12 @@ export function TimelineProgress() {
   const [dayOfYear, setDayOfYear] = useState(0)
   const [percentOfYear, setPercentOfYear] = useState(0)
   const [percentOfToday, setPercentOfToday] = useState(0)
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = now.getMonth() + 1
+  const day = now.getDate()
 
   const updateInfo = () => {
-    const now = new Date()
     setCurrentYear(now.getFullYear())
 
     const pastDays = getDiffInDays(getStartOfYear(now), now)
@@ -31,15 +34,32 @@ export function TimelineProgress() {
   return (
     <>
       <p className="mt-4">
-        오늘은 {currentYear}년의 <CountUp to={dayOfYear} decimals={0} />
-        일째 입니다.
+        <span className="font-bold">{currentYear}</span>년의{' '}
+        <span className="font-bold">
+          <CountUp to={dayOfYear} decimals={0} />
+        </span>
+        일째 -{' '}
+        <span className="font-bold">
+          <CountUp to={percentOfYear} decimals={1} />
+        </span>
+        %
       </p>
-      <p className="mt-4">
-        올해의 <CountUp to={percentOfYear} decimals={1} />
+      {/* <p className="mt-2">
+        올해의{' '}
+        <span className="font-bold">
+          <CountUp to={percentOfYear} decimals={1} />
+        </span>
         %가 지나갔습니다.
-      </p>
-      <p className="mt-4">
-        오늘의 <CountUp to={percentOfToday} decimals={1} />% 지나갔습니다.
+      </p> */}
+      <p className="mt-2">
+        <span className="font-bold">
+          {month}월 {day}일
+        </span>
+        의{' '}
+        <span className="font-bold">
+          <CountUp to={percentOfToday} decimals={1} />
+        </span>
+        %가 지나갔습니다.
       </p>
     </>
   )
