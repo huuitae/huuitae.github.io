@@ -62,7 +62,7 @@ key는 요소의 목록을 만들 때 포함해야하는 특수한 문자열 속
 ```html
 <ul>
   <li>second</li>
-  <li>thrid</li>
+  <li>third</li>
 </ul>
 ```
 
