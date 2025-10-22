@@ -1,7 +1,7 @@
 ---
-title: Emoji-React-Picker로 이모지 남기기
+title: Emoji-Picker-React로 이모지 남기기
 date: 2025-10-22T13:55:00+09:00
-summary: React의 Virtual DOM에 대해 알아보자.
+summary: Emoji-Picker-React 라이브러리를 사용해서 이모지 기능 넣기
 category: React
 tags: [React, emoji-react-picker, 코드잇, 팀프로젝트]
 ---
