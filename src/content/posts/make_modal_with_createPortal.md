@@ -1,6 +1,6 @@
 ---
 title: React createPortal로 모달 만들기
-date: 2025-10-22T17:00:00+09:00
+date: 2025-10-22T19:20:00+09:00
 summary: createPortal() 함수를 활용해서 모달 제작하기
 category: React
 tags: [React, createPortal, 모달, dialog]
