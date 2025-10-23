@@ -1,6 +1,6 @@
 ---
 title: React 에러 바운더리로 오류 처리하기
-date: 2025-10-23T19:20:00+09:00
+date: 2025-10-23T17:35:00+09:00
 summary: 에러 바운더리로 오류 처리하기
 category: React
 tags: [React, Error boundary, TypeScript, 에러 처리, 토스트]
