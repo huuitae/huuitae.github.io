@@ -183,4 +183,7 @@ return (
 
 오른쪽 상단에 발생시킨 에러 메시지의 내용이 담긴 토스트 메시지가 잘 표출되는 모습을 확인할 수 있습니다.
 
+> 참조  
+> [error boundary로 렌더링 오류 포착하기](https://ko.react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
+
 ---
